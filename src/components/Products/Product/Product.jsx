@@ -11,7 +11,7 @@ const Product = ({ id, name, description }) => {
 
   const handleDelete = async () => {
     await removeItemFromCart(id);
-    setCount(0);
+    
   };
   useEffect(() => {
     if (id) {
